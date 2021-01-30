@@ -19,7 +19,7 @@ public class testeOrcamento {
 		salario1.substrairCom("1000.00");
 	
 		
-		Orcamento salario = new Orcamento(debito1.getDebitoCredito(), salario1.getValor(), agora1, salarioComentario);
+		Orcamento salario = new Orcamento(debito1, salario1.getValorFormatado(), agora1, salarioComentario);
 		System.out.println(salario);
 		
 		
