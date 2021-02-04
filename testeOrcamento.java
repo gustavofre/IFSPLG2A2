@@ -37,8 +37,15 @@ public class testeOrcamento {
 		Orcamento saldoContaLuz = new Orcamento (credito1, contaLuz.getValorFormatado(), agora1, pagamentoContaLuz);
 		System.out.println(saldoContaLuz);
 		Orcamento total2 = new Orcamento (total1, salario1.getValorFormatado(), agora1, mensagemTotal );
-		System.out.println(total2);
+		System.out.println(total2 + "\n");
 		
+		Moeda jurosInvestimentos1 = new Moeda ("1500.00");
+		salario1.somarCom("1500.00");
+		String recebimentoInvestimentos = "Recebimento Investimentos";
+		Orcamento saldoRecebimentoInvestimentos = new Orcamento (debito1, jurosInvestimentos1.getValorFormatado(), agora1, recebimentoInvestimentos);
+		System.out.println(saldoRecebimentoInvestimentos);
+		Orcamento total3 = new Orcamento (total1, salario1.getValorFormatado(), agora1, mensagemTotal);
+		System.out.println(total3);
 		
 	}
 

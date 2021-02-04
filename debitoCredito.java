@@ -4,34 +4,14 @@ public enum debitoCredito {
 	
 	DEBITO('+'), CREDITO('-'), TOTAL ('=');
 	
-	private String valor; 
-	private int salario;
+	private char valor; 
 	
-	debitoCredito( String valor){
+	debitoCredito( char valor){
 		this.valor = valor;
 	}
 	
-	String getDebitoCredito () {
+	char getDebitoCredito () {
 		 return this.valor;
 	}
-	
-	 debitoCredito(int valorSalario ) {
-		 this.setSalario(valorSalario);
-	}
-	 
-	 debitoCredito () {
-		 return;
-	 }
-
-	public int getSalario() {
-		return salario;
-	}
-
-	public void setSalario(int salario) {
-		this.salario = salario;
-	}
-	 
-
-	
-	
+		 
 }
