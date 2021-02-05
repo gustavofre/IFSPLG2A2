@@ -12,8 +12,7 @@ public class Contato {
 		this.endereco = endereco;
 	}
 	
-	@Override
-	public String toString() {
+	public String text() {
 		return "Contato: " + nome + " - " + telefone + " - " + endereco; 
 	}
 

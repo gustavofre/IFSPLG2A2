@@ -11,27 +11,21 @@ public class Data {
 	
 	public Data (int dia, int meses, int ano) {
 		this.dia = dia;
-		this.mes = meses;
+		this.setMes(meses);
 		this.ano = ano;
 	}
 	
-	public void validadeMes (int meses) {
+	public boolean setMes (int meses) {
 		if (meses >=1 && meses <=12) {
 			this.mes = meses;
-		} else {
-			 this.mes = 0;
-		}
+			return true;
+		} 
+		return false;
 	}
 
 	public int getMes() {
 		return mes;
 	}
-
-	public void setMes(int meses) {
-		this.mes = meses;
-	}
-	
-	
 
 	public int getDia() {
 		return dia;
