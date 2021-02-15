@@ -10,9 +10,20 @@ public class AlunoMatriculado {
 	private double mediaAlunoMatriculado = 0;
 	private String mensagemSituacao = "";
 	
+	
+	
 	public double calculoMedia () {
 		double mediaAlunoMatriculado1 = (prova1 + prova2 + trabalho)/3;
 		return this.mediaAlunoMatriculado = mediaAlunoMatriculado1;
+	}
+	
+	public AlunoMatriculado (String nome, int matricula, double prova1, double prova2, double trabalho) {
+		this.nome = nome;
+		this.matricula = matricula;
+		this.prova1 = prova1;
+		this.prova2 = prova2;
+		this.trabalho = trabalho;
+		this.calculoMedia();
 	}
 	
 	public String Aprovacao(String mensagemSituacao ) {
@@ -87,6 +98,7 @@ public class AlunoMatriculado {
 		
 		System.out.println("O aluno " + getNome() + " de matricula " + getMatricula() + " teve média de  " +  mediaAlunoMatriculado
 			 + 	" e foi " + Aprovacao(mensagemSituacao));
+		System.out.println();
 		
 	}
 	

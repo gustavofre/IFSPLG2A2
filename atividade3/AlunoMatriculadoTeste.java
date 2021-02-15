@@ -4,16 +4,15 @@ public class AlunoMatriculadoTeste {
 	
 	public static void main (String [] args) {
 		
-		AlunoMatriculado aluno1 = new AlunoMatriculado ();
-		
-		aluno1.setNome("Gustavo Freitas");
-		aluno1.setMatricula(209090);
-		aluno1.setProva1(1);
-		aluno1.setProva2(10);
-		aluno1.setTrabalho(7);
-		
-		aluno1.calculoMedia();
+		AlunoMatriculado aluno1 = new AlunoMatriculado ("Gustavo Freitas", 209090, 10, 2, 5);
 		aluno1.imprimirSituacao();
+		
+		AlunoMatriculado aluno2 = new AlunoMatriculado ("Carly Rae", 209091, 2,3,1);
+		aluno2.imprimirSituacao();
+		
+		AlunoMatriculado aluno3 = new AlunoMatriculado ("Valentim Augusto", 209092, 2,10,10);
+		aluno3.imprimirSituacao();
+		
 		
 	}
 	
